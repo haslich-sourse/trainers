@@ -1,0 +1,202 @@
+/* Общие стили */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  /* Бургер-меню активное состояние */
+  .menu.active {
+    display: block;
+  }
+  
+  .burger-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+  }
+  
+  .burger-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .burger-icon span {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    transition: all 0.3s ease;
+  }
+  
+  /* Скрываем меню по умолчанию */
+  .menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    margin: 10px 0;
+  }
+  
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Анимация для открытия меню */
+  .menu.open {
+    display: block;
+  }
+  
+  /* Основные стили для страницы*/
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .introduction h1,
+  .personal-story h2,
+  .music-section h2,
+  .cat-section h2 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #333;
+  }
+  
+  .about-container p {
+    font-family: "Roboto", sans-serif;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .music-section {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+  
+  .cat-section {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  .introduction p,
+  .personal-story p,
+  .music-section p,
+  .cat-section p {
+    font-size: 18px;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 0px;
+    margin-top: 20px;
+    background-color:rgb(15, 99, 27);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color: rgb(100, 203, 120);
+    justify-content:stretch;
+    align-self: stretch;
+    row-gap: 10px;
+    border: 30px;
+    align-items:stretch;
+  }
+
+.container__img {
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.head_trainer{
+  display: flex;
+  margin-top: 30px;
+
+}
+
+.head_trainer_title {
+  text-align: center;
+}
+
+.title_container_trainer{
+  text-align: center;
+}
+.title_container_trainer:before{
+  content:"🥑";
+  
+
+  
+}
+.text_container_trainer{
+ font-family: 'Times New Roman', Times, serif;
+ font-size: medium;
+ text-align:justify;
+
+
+}
+.head_trainer{
+  font-family: 'Times New Roman', Times, serif;
+  
+  
+}
+
+/* Стили для кнопок "LIKE" */
+.like-button {
+    background-color: #6ab04c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.like-button:hover {
+    background-color: #4b8f29;
+}
+
+/* Стили для счетчика лайков */
+.container p {
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: bold;
+}

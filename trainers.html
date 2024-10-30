@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avocado Fitness</title>
+    <link rel="stylesheet" href="trainers.css" />
+</head>
+<body>
+    <header>
+        <div class="burger-menu">
+            <div class="burger-icon" id="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../general/general.html">Главная</a></li>
+                    <li><a href="../about/about.html">О нас</a></li>
+                    <li><a href="../trainers/trainers.html">Тренировки</a></li>
+                    <li><a href="../recipes/recipes.html">Рецепты</a></li>
+                    <li><a href="../contact/contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной блок страницы -->
+    <div class="head_trainer">
+        <h1 class="head_trainer_title">Тренировки Avocado Fitness</h1>
+    </div>
+
+    <div class="container">
+        <div class="container__A">
+            <h2 class="title_container_trainer">Для начинающих</h2>
+            <p class="text_container_trainer">Включает простые упражнения, которые помогут постепенно укрепить мышцы, улучшить гибкость и выносливость.</p>
+            <img src="img_trainers/cute-avocado-ice-cream.jpg" alt="cute-avocado-ice-cream" class="container__img">
+            <button class="like-button" data-id="1">LIKE</button>
+            <p>LIKE: <span id="counter-1">0</span></p>
+        </div>
+
+        <div class="container__B">
+            <h2 class="title_container_trainer">Интервальные тренировки (HIIT)</h2>
+            <img src="img_trainers/cute-avocado-playing-jump.avif" alt="cute-avocado-playing-jump" class="container__img">
+            <button class="like-button" data-id="2">LIKE</button>
+            <p>LIKE: <span id="counter-2">0</span></p>
+        </div>
+
+        <div class="container__C">
+            <h2 class="title_container_trainer">Йога и растяжка</h2>
+            <p class="text_container_trainer">Эти тренировки помогают улучшить гибкость, снять напряжение и стресс.</p>
+            <img src="img_trainers/cute-avocado-yoga-pose.jpg" alt="cute-avocado-yoga-pose" class="container__img">
+            <button class="like-button" data-id="3">LIKE</button>
+            <p>LIKE: <span id="counter-3">0</span></p>
+        </div>
+
+        <div class="container__D">
+            <h2 class="title_container_trainer">Силовые тренировки</h2>
+            <img src="img_trainers/cute-avocado-lifting-barbell.jpg" alt="personal" class="container__img">
+            <button class="like-button" data-id="4">LIKE</button>
+            <p>LIKE: <span id="counter-4">0</span></p>
+        </div>
+
+        <div class="container__E">
+            <h2 class="title_container_trainer">Кардио-тренировки</h2>
+            <p class="text_container_trainer">Кардиопрограмма направлена на улучшение работы сердечно-сосудистой системы и повышение общей выносливости.</p>
+            <img src="img_trainers/avocardio-funny.jpg" alt="avocardio-funny" class="container__img">
+            <button class="like-button" data-id="5">LIKE</button>
+            <p>LIKE: <span id="counter-5">0</span></p>
+        </div>
+
+        <div class="container__F">
+            <h2 class="title_container_trainer">Функциональная тренировка</h2>
+            <img src="img_trainers/hand-drawn-sticker-cute.avif" alt="hand-drawn-sticker-cute" class="container__img">
+            <button class="like-button" data-id="6">LIKE</button>
+            <p>LIKE: <span id="counter-6">0</span></p>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <p class="footer_text">© 2024 Avocado Fitness. Все права защищены.</p>
+    </footer>
+
+    <!-- Подключение JS -->
+    <script src="trainers.js"></script>
+</body>
+</html>
